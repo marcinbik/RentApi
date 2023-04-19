@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  evidential_1: MyString
+  evidential_2: MyString
+  evidential_3: MyString
+  type: 1
+  status: 1
+  price_hours: 9.99
+  price_minute: 9.99
+  price_day: 9.99
+  pdeposit: 9.99
+  use_limit: 1
+  note: MyText
+
+two:
+  name: MyString
+  evidential_1: MyString
+  evidential_2: MyString
+  evidential_3: MyString
+  type: 1
+  status: 1
+  price_hours: 9.99
+  price_minute: 9.99
+  price_day: 9.99
+  pdeposit: 9.99
+  use_limit: 1
+  note: MyText

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  when: 2023-04-19 17:23:00
+  when_return: 2023-04-19 17:23:00
+  declare_return: 2023-04-19 17:23:00
+  status: 1
+  type: 1
+  note: MyText
+
+two:
+  when: 2023-04-19 17:23:00
+  when_return: 2023-04-19 17:23:00
+  declare_return: 2023-04-19 17:23:00
+  status: 1
+  type: 1
+  note: MyText
