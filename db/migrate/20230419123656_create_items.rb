@@ -7,12 +7,13 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string :evidential_3
       t.integer :type
       t.integer :status
-      t.monetize :price_hours 
-      t.monetize :price_minute 
-      t.monetize :price_day 
+      t.monetize :price_hours
+      t.monetize :price_minute
+      t.monetize :price_day
       t.monetize :deposit 
       t.integer :use_limit
       t.text :note
+      
 
       t.timestamps
     end
