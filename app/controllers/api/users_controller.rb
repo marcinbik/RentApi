@@ -1,4 +1,4 @@
-class ApplicationJob < ActiveJob::Base
+class Api::UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
 
   # POST /api/users
