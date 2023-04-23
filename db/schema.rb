@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_20_072943) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_23_110941) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,6 +23,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_20_072943) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "customers_id", null: false
+    t.index ["customers_id"], name: "index_companies_on_customers_id"
   end
 
   create_table "company_users", force: :cascade do |t|
@@ -99,7 +101,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_20_072943) do
     t.bigint "company_id", null: false
     t.bigint "user_id", null: false
     t.bigint "item_id", null: false
+    t.bigint "customers_id", null: false
     t.index ["company_id"], name: "index_rents_on_company_id"
+    t.index ["customers_id"], name: "index_rents_on_customers_id"
     t.index ["item_id"], name: "index_rents_on_item_id"
     t.index ["user_id"], name: "index_rents_on_user_id"
   end
@@ -123,10 +127,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_20_072943) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "companies", "customers", column: "customers_id"
   add_foreign_key "company_users", "companies"
   add_foreign_key "company_users", "users"
   add_foreign_key "items", "companies"
   add_foreign_key "rents", "companies"
+  add_foreign_key "rents", "customers", column: "customers_id"
   add_foreign_key "rents", "items"
   add_foreign_key "rents", "users"
 end
