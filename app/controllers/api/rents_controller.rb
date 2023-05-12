@@ -1,4 +1,13 @@
 class Api::RentsController < ApplicationController
+  # index for copany
+  def index_for_company
+    @company = Company.find(params[:company_id])
+    @rents = @company.rents
+
+    render json: @rents
+  end
+
+  # create
   def create
     @rent = Rent.new(rent_params)
     if @rent.save

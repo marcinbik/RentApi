@@ -12,10 +12,16 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  # index 
+  def index
+    @users = User.all
+    render json: @users
+  end
+
   # DELETE /api/users/:id
   def destroy
     @user.destroy
-    head :no_content
+    head :ok
   end
 
   # GET /api/users/:id

@@ -2,6 +2,7 @@ class Api::ItemsController < ApplicationController
   before_action :set_company
   before_action :set_item, only: [:show, :update, :destroy]
 
+
   # POST /api/companies/:company_id/items
   def create
     @item = @company.items.build(item_params)
@@ -23,6 +24,8 @@ class Api::ItemsController < ApplicationController
   def show
     render json: @item
   end
+
+  
 
   # PATCH/PUT /api/companies/:company_id/items/:id
   def update
