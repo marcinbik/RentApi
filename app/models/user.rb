@@ -1,8 +1,14 @@
 class User < ApplicationRecord
-  enum type: [:worker, :boss, :not_set]
+  enum role: [:worker, :boss, :not_set]
   has_many :company_users
   has_many :companies, through: :company_users
   has_many :rents
 
+  PHONE_REGEX = /\A\+\d{1,3}\d{9,16}\z/
+
   validates :email, presence: true
+  validates :phone, presence: true, format: { with: PHONE_REGEX }
+  validates :role, presence: true, inclusion: { in: ['worker', 'boss', 'not_set'] }
+
+
 end

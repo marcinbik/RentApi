@@ -32,7 +32,6 @@ RSpec.describe Api::UsersController, type: :controller do
   describe "POST #create" do
     context "with valid attributes" do
       let(:valid_attributes) { FactoryBot.attributes_for(:user) }
-
       it "creates a new user" do
         expect {
           post :create, params: { user: valid_attributes }
