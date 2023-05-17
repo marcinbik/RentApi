@@ -20,7 +20,7 @@ class Api::RentsController < ApplicationController
   private
   
   def rent_params
-    params.require(:rent).permit(:when, :when_return, :declare_return, :status, :type, :price_hours_cents, :price_hours_currency, :price_minute_cents, :price_day_cents, :price_day_currency, :deposit_cents, :deposit_currency, :sumary_cost_cents, :sumary_cost_currency, :note, :company_id, :user_id, :customers_id )
+    params.require(:rent).permit(:when, :when_return, :declare_return, :rent_status, :rent_type, :price_hours_cents, :price_hours_currency, :price_minute_cents, :price_day_cents, :price_day_currency, :deposit_cents, :deposit_currency, :sumary_cost_cents, :sumary_cost_currency, :note, :company_id, :user_id, :customers_id )
   end
 
   def destroy

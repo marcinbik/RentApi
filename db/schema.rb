@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_14_125558) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_23_110941) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_125558) do
     t.string "name"
     t.string "addres"
     t.string "nip"
-    t.integer "type"
+    t.integer "company_type"
     t.string "phone"
     t.text "note"
     t.datetime "created_at", null: false
@@ -47,7 +47,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_125558) do
     t.string "phone"
     t.string "company"
     t.string "nip"
-    t.integer "type"
+    t.integer "customer_type"
     t.string "personal_number"
     t.integer "discount"
     t.string "identity_card"
@@ -61,8 +61,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_125558) do
     t.string "evidential_1"
     t.string "evidential_2"
     t.string "evidential_3"
-    t.integer "type"
-    t.integer "status"
+    t.integer "item_type"
+    t.integer "item_status"
     t.integer "price_hours_cents", default: 0, null: false
     t.string "price_hours_currency", default: "PLN", null: false
     t.integer "price_minute_cents", default: 0, null: false
@@ -83,8 +83,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_125558) do
     t.datetime "when"
     t.datetime "when_return"
     t.datetime "declare_return"
-    t.integer "status"
-    t.integer "type"
+    t.integer "rent_status"
+    t.integer "rent_type"
     t.integer "price_hours_cents", default: 0, null: false
     t.string "price_hours_currency", default: "PLN", null: false
     t.integer "price_minute_cents", default: 0, null: false
@@ -119,12 +119,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_125558) do
     t.string "phone"
     t.string "company"
     t.string "nip"
+    t.integer "role"
     t.string "personal_number"
     t.string "passwd"
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "role"
   end
 
   add_foreign_key "companies", "customers", column: "customers_id"

@@ -47,7 +47,7 @@ class Api::ItemsController < ApplicationController
   end
 
   def item_params
-    params.require(:item).permit(:name, :evidential_1, :evidential_2, :evidential_3, :type, :status,  :price_hours_cents, :price_hours_currency, :price_minute_cents, :price_minute_currency, :price_minute_currency, :price_day_currency, :deposit_cents, :deposit_currency, :use_limit, :note, :company_id )
+    params.require(:item).permit(:name, :evidential_1, :evidential_2, :evidential_3, :item_type, :item_status,  :price_hours_cents, :price_hours_currency, :price_minute_cents, :price_minute_currency, :price_minute_currency, :price_day_currency, :deposit_cents, :deposit_currency, :use_limit, :note, :company_id )
   end
 end
 

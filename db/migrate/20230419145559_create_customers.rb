@@ -11,7 +11,7 @@ class CreateCustomers < ActiveRecord::Migration[7.0]
       t.string :phone
       t.string :company
       t.string :nip
-      t.integer :type
+      t.integer :customer_type
       t.string :personal_number
       t.integer :discount
       t.string :identity_card

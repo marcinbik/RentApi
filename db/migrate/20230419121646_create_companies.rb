@@ -4,7 +4,7 @@ class CreateCompanies < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :addres
       t.string :nip
-      t.integer :type
+      t.integer :company_type
       t.string :phone
       t.text :note
 

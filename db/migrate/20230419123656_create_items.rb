@@ -5,8 +5,8 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string :evidential_1
       t.string :evidential_2
       t.string :evidential_3
-      t.integer :type
-      t.integer :status
+      t.integer :item_type
+      t.integer :item_status
       t.monetize :price_hours
       t.monetize :price_minute
       t.monetize :price_day

@@ -11,7 +11,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :phone
       t.string :company
       t.string :nip
-      t.integer :type
+      t.integer :role
       t.string :personal_number
       t.string :passwd
       t.text :note
