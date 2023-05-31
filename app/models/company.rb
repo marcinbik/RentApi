@@ -3,5 +3,6 @@ class Company < ApplicationRecord
   has_many :company_users
   has_many :users, through: :company_users
   has_many :rents
-  has_many :item
+  has_many :items
+  has_many :customers
 end
