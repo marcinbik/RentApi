@@ -4,5 +4,6 @@ class Company < ApplicationRecord
   has_many :users, through: :company_users
   has_many :rents
   has_many :items
-  has_many :customers
+  has_many :company_customers
+  has_many :customers, through: :company_customers
 end
