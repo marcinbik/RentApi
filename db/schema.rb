@@ -23,7 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_115449) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "company_customer_id", null: false
+    t.bigint "company_customer_id"
     t.index ["company_customer_id"], name: "index_companies_on_company_customer_id"
   end
 
@@ -63,7 +63,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_115449) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "company_customer_id", null: false
+    t.bigint "company_customer_id"
     t.index ["company_customer_id"], name: "index_customers_on_company_customer_id"
   end
 
@@ -86,7 +86,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_115449) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "company_id", null: false
+    t.bigint "company_id"
     t.index ["company_id"], name: "index_items_on_company_id"
   end
 
@@ -111,8 +111,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_115449) do
     t.datetime "updated_at", null: false
     t.bigint "company_id", null: false
     t.bigint "user_id", null: false
-    t.bigint "item_id", null: false
-    t.bigint "customers_id", null: false
+    t.bigint "item_id"
+    t.bigint "customers_id"
     t.index ["company_id"], name: "index_rents_on_company_id"
     t.index ["customers_id"], name: "index_rents_on_customers_id"
     t.index ["item_id"], name: "index_rents_on_item_id"

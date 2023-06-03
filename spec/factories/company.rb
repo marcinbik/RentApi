@@ -6,6 +6,9 @@ FactoryBot.define do
     company_type { 'work' }
     phone { Faker::PhoneNumber.cell_phone_in_e164 }
     note { Faker::Hipster.sentence }
-    company_id { FactoryBot.create(:user) }
+    after(:build) do |company|
+      company.company_customer_id = nil
+    end
+
   end
 end

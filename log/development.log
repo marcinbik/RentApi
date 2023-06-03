@@ -1571,3 +1571,207 @@ Migrating to RemoveCustomerReferenceFromCompanies (20230601115449)
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2201452955252653200)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Vada"], ["lastname", "McLaughlin"], ["email", "mariette_carroll@goyette.test"], ["country", "Sweden"], ["voivodeship", nil], ["city", "Grantberg"], ["post_code", "70849-2099"], ["phone", "+2354894978810"], ["company", "Virgin Galactic"], ["nip", nil], ["role", 1], ["personal_number", "05425993368"], ["passwd", "[FILTERED]"], ["note", "Cold-pressed aesthetic butcher shoreditch kickstarter letterpress selfies."], ["created_at", "2023-06-02 19:11:11.166014"], ["updated_at", "2023-06-02 19:11:11.166014"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.6ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "4707 Douglas Park, Brittabury, NE 03933"], ["nip", "05724213503"], ["company_type", 0], ["phone", "+3736761576511"], ["note", "Yuccie shoreditch chambray gentrify roof butcher tousled ramps."], ["created_at", "2023-06-02 19:17:53.254526"], ["updated_at", "2023-06-02 19:17:53.254526"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.6ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "SpaceDev"], ["address", "86937 Sarai Squares, Armindamouth, MS 80269-5334"], ["nip", "08084316196"], ["company_type", 0], ["phone", "+3571892584733"], ["note", "Flexitarian tattooed fingerstache bespoke jean shorts shabby chic sriracha."], ["created_at", "2023-06-02 19:19:22.135353"], ["updated_at", "2023-06-02 19:19:22.135353"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "NASA Jet Propulsion Laboratory"], ["address", "Suite 854 950 Susan Creek, East Aron, AL 71719-3468"], ["nip", "01382885696"], ["company_type", 0], ["phone", "+2549001183526"], ["note", "Narwhal gentrify wayfarers helvetica distillery pour-over kickstarter kogi yr."], ["created_at", "2023-06-02 19:19:37.945145"], ["updated_at", "2023-06-02 19:19:37.945145"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (21.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "RentApi_development"[0m
+  [1m[35m (18.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "RentApi_test"[0m
+  [1m[35m (146.9ms)[0m  [1m[35mCREATE DATABASE "RentApi_development" ENCODING = 'unicode'[0m
+  [1m[35m (80.3ms)[0m  [1m[35mCREATE DATABASE "RentApi_test" ENCODING = 'unicode'[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230419113700)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "lastname" character varying, "email" character varying, "country" character varying, "voivodeship" character varying, "city" character varying, "post_code" character varying, "phone" character varying, "company" character varying, "nip" character varying, "role" integer, "personal_number" character varying, "passwd" character varying, "note" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230419113700"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCompanies (20230419121646)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying, "address" character varying, "nip" character varying, "company_type" integer, "phone" character varying, "note" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230419121646"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateItems (20230419123656)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "evidential_1" character varying, "evidential_2" character varying, "evidential_3" character varying, "item_type" integer, "item_status" integer, "price_hours_cents" integer DEFAULT 0 NOT NULL, "price_hours_currency" character varying DEFAULT 'PLN' NOT NULL, "price_minute_cents" integer DEFAULT 0 NOT NULL, "price_minute_currency" character varying DEFAULT 'PLN' NOT NULL, "price_day_cents" integer DEFAULT 0 NOT NULL, "price_day_currency" character varying DEFAULT 'PLN' NOT NULL, "deposit_cents" integer DEFAULT 0 NOT NULL, "deposit_currency" character varying DEFAULT 'PLN' NOT NULL, "use_limit" integer, "note" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230419123656"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCustomers (20230419145559)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "lastname" character varying, "email" character varying, "country" character varying, "voivodeship" character varying, "city" character varying, "post_code" character varying, "phone" character varying, "company" character varying, "nip" character varying, "customer_type" integer, "personal_number" character varying, "discount" integer, "identity_card" character varying, "note" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230419145559"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRents (20230419152300)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "rents" ("id" bigserial primary key, "when" timestamp(6), "when_return" timestamp(6), "declare_return" timestamp(6), "rent_status" integer, "rent_type" integer, "price_hours_cents" integer DEFAULT 0 NOT NULL, "price_hours_currency" character varying DEFAULT 'PLN' NOT NULL, "price_minute_cents" integer DEFAULT 0 NOT NULL, "price_minute_currency" character varying DEFAULT 'PLN' NOT NULL, "price_day_cents" integer DEFAULT 0 NOT NULL, "price_day_currency" character varying DEFAULT 'PLN' NOT NULL, "deposit_cents" integer DEFAULT 0 NOT NULL, "deposit_currency" character varying DEFAULT 'PLN' NOT NULL, "sumary_cost_cents" integer DEFAULT 0 NOT NULL, "sumary_cost_currency" character varying DEFAULT 'PLN' NOT NULL, "note" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230419152300"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCompanyUsers (20230420064350)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "company_users" ("id" bigserial primary key, "company_id" bigint NOT NULL, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6e70dad67e"
+FOREIGN KEY ("company_id")
+  REFERENCES "companies" ("id")
+, CONSTRAINT "fk_rails_946619ff40"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_company_users_on_company_id" ON "company_users" ("company_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE INDEX "index_company_users_on_user_id" ON "company_users" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230420064350"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCompanyIdToRents (20230420070041)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "rents" ADD "company_id" bigint NOT NULL[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE INDEX "index_rents_on_company_id" ON "rents" ("company_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "rents" ADD CONSTRAINT "fk_rails_b230ab69e5"
+FOREIGN KEY ("company_id")
+  REFERENCES "companies" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230420070041"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToRents (20230420070411)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "rents" ADD "user_id" bigint NOT NULL[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_rents_on_user_id" ON "rents" ("user_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "rents" ADD CONSTRAINT "fk_rails_73333524d9"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230420070411"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddItemIdToRents (20230420072311)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "rents" ADD "item_id" bigint[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE INDEX "index_rents_on_item_id" ON "rents" ("item_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "rents" ADD CONSTRAINT "fk_rails_54d35a52a8"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230420072311"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCompanyIdToItem (20230420072943)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "items" ADD "company_id" bigint[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_items_on_company_id" ON "items" ("company_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "items" ADD CONSTRAINT "fk_rails_ad750f090b"
+FOREIGN KEY ("company_id")
+  REFERENCES "companies" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230420072943"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCustomersIdToRents (20230423103237)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "rents" ADD "customers_id" bigint[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_rents_on_customers_id" ON "rents" ("customers_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "rents" ADD CONSTRAINT "fk_rails_d919e0ef13"
+FOREIGN KEY ("customers_id")
+  REFERENCES "customers" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230423103237"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCustomersIdToCompany (20230423110941)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "companies" ADD "customers_id" bigint[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_companies_on_customers_id" ON "companies" ("customers_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "companies" ADD CONSTRAINT "fk_rails_00d3215c3f"
+FOREIGN KEY ("customers_id")
+  REFERENCES "customers" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230423110941"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCompanyCustomers (20230601114710)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "company_customers" ("id" bigserial primary key, "company_id" bigint, "customer_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_0688abf227"
+FOREIGN KEY ("company_id")
+  REFERENCES "companies" ("id")
+, CONSTRAINT "fk_rails_bf10561ffa"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE INDEX "index_company_customers_on_company_id" ON "company_customers" ("company_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE INDEX "index_company_customers_on_customer_id" ON "company_customers" ("customer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230601114710"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCompanyCustomerReferenceToCustomers (20230601115051)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "company_customer_id" bigint[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE INDEX "index_customers_on_company_customer_id" ON "customers" ("company_customer_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "customers" ADD CONSTRAINT "fk_rails_f2b7ef34f1"
+FOREIGN KEY ("company_customer_id")
+  REFERENCES "company_customers" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230601115051"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCompanyCustomerReferenceToCompanies (20230601115136)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "companies" ADD "company_customer_id" bigint[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_companies_on_company_customer_id" ON "companies" ("company_customer_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "companies" ADD CONSTRAINT "fk_rails_8c28a0e414"
+FOREIGN KEY ("company_customer_id")
+  REFERENCES "company_customers" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230601115136"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveCustomerReferenceFromCompanies (20230601115449)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "companies" DROP CONSTRAINT "fk_rails_00d3215c3f"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "companies" DROP COLUMN "customers_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230601115449"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-06-03 17:21:35.061539"], ["updated_at", "2023-06-03 17:21:35.061539"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2201452955252653200)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.7ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "SpaceX"], ["address", "Apt. 946 3750 Wehner Mountain, Port Lashawn, AL 06241-7214"], ["nip", "06543659198"], ["company_type", 0], ["phone", "+2294605916994"], ["note", "Bushwick fanny pack vice migas flannel tacos put a bird on it +1."], ["created_at", "2023-06-03 17:35:03.432363"], ["updated_at", "2023-06-03 17:35:03.432363"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "Suite 864 2532 Deane Squares, Weimannberg, WY 94566-2264"], ["nip", "09343355511"], ["company_type", 0], ["phone", "+2423056373975"], ["note", "Chartreuse single-origin coffee authentic ethical blue bottle locavore."], ["created_at", "2023-06-03 17:40:59.607843"], ["updated_at", "2023-06-03 17:40:59.607843"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "NASA Jet Propulsion Laboratory"], ["address", "Suite 689 76065 Kurt Hills, Keeblerberg, WY 29157-9615"], ["nip", "02069300645"], ["company_type", 0], ["phone", "+50715044979952"], ["note", "Shoreditch craft beer loko taxidermy kogi kale chips."], ["created_at", "2023-06-03 17:40:59.612398"], ["updated_at", "2023-06-03 17:40:59.612398"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "Apt. 472 5758 Harber Pike, New Octavio, WV 04862-8225"], ["nip", "06308136657"], ["company_type", 0], ["phone", "+2382976267513"], ["note", "Next level cronut gluten-free kitsch cred keffiyeh quinoa cleanse chicharrones."], ["created_at", "2023-06-03 17:40:59.617345"], ["updated_at", "2023-06-03 17:40:59.617345"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m

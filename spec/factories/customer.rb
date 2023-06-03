@@ -10,6 +10,6 @@ FactoryBot.define do
     company { Faker::Space.company }
     personal_number { Faker::Number.decimal_part(digits: 11) }
     note { Faker::Hipster.sentence }
-   # company { FactoryBot.create(:company) }
+  
   end
 end
