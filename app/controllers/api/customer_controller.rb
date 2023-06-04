@@ -1,10 +1,14 @@
-class CustomersController < ApplicationController
-    before_action :set_customer, only: [:show, :update, :destroy]
+# frozen_string_literal: true
+
+module Api
+  # Customer Controller
+  class CustomersController < ApplicationController
+    before_action :set_customer, only: %I[show update destroy]
 
     # GET /api/customers
     def index
-      @customers = Customer.all
-      render json: @customers
+    @customers = Customer.all
+    render json: @customers
     end
 
     # POST /api/customers
@@ -44,7 +48,12 @@ class CustomersController < ApplicationController
     end
 
     def customer_params
-      params.require(:customer).permit(:first_name, :last_name, :email, :country, :voivodeship, :city, :post_code, 
-        :phone, :company, :nip, :customer_type, :personal_number, :discount, :indetity_card, :note )
+      params.require(:customer).permit(
+        :first_name, :last_name, :email,
+        :country, :voivodeship, :city, :post_code,
+        :phone, :company, :nip, :customer_type, :personal_number,
+        :discount, :indetity_card, :note
+      )
     end
+  end
 end
