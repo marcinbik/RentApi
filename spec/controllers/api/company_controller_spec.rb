@@ -1,6 +1,8 @@
+ # frozen_string_literal: true
+
  require 'rails_helper'
 
- RSpec.describe Api::UsersController, type: :controller do
+ RSpec.describe Api::CompanyController, type: :controller do
    let!(:companies) { FactoryBot.create_list(:company, 3) }
    let!(:company) { FactoryBot.create(:company) }
 

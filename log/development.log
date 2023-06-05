@@ -1775,3 +1775,365 @@ Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a con
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[36mCompany Create (0.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "Apt. 472 5758 Harber Pike, New Octavio, WV 04862-8225"], ["nip", "06308136657"], ["company_type", 0], ["phone", "+2382976267513"], ["note", "Next level cronut gluten-free kitsch cred keffiyeh quinoa cleanse chicharrones."], ["created_at", "2023-06-03 17:40:59.617345"], ["updated_at", "2023-06-03 17:40:59.617345"], ["company_customer_id", nil]]
   [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.7ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "SpaceX"], ["address", "Suite 124 787 Jacqueline Harbors, West Federicoburgh, WI 97011"], ["nip", "07595612508"], ["company_type", 0], ["phone", "+2609861210693"], ["note", "Before they sold out five dollar toast leggings art party meditation small batch viral bushwick mixtape."], ["created_at", "2023-06-04 14:38:34.487397"], ["updated_at", "2023-06-04 14:38:34.487397"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bigelow Aerospace"], ["address", "Apt. 232 30385 Monahan Cape, East Portiachester, FL 56712-3538"], ["nip", "08687427372"], ["company_type", 0], ["phone", "+821755078352"], ["note", "Crucifix umami direct trade chartreuse ramps freegan keffiyeh."], ["created_at", "2023-06-04 14:38:34.494423"], ["updated_at", "2023-06-04 14:38:34.494423"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "Apt. 119 884 Trantow Brook, Millsshire, MI 15523-6945"], ["nip", "03139634545"], ["company_type", 0], ["phone", "+88017489405108"], ["note", "Xoxo lo-fi seitan wes anderson vinegar."], ["created_at", "2023-06-04 14:38:34.498344"], ["updated_at", "2023-06-04 14:38:34.498344"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mCompany Load (3.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (1.7ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "Suite 192 443 Aja Stravenue, Port Fredric, AR 46801"], ["nip", "03629552472"], ["company_type", 0], ["phone", "+17843314538556"], ["note", "Venmo selfies offal yr."], ["created_at", "2023-06-05 08:48:08.945060"], ["updated_at", "2023-06-05 08:48:08.945060"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "JPL"], ["address", "697 Aurelio Well, Port Melissia, PA 63441"], ["nip", "06091070064"], ["company_type", 0], ["phone", "+59813820195093"], ["note", "Literally goth gluten-free deep v sustainable."], ["created_at", "2023-06-05 08:48:08.951416"], ["updated_at", "2023-06-05 08:48:08.951416"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "SpaceX"], ["address", "94156 Windler Mountain, Estebantown, AL 63173-6832"], ["nip", "01845442553"], ["company_type", 0], ["phone", "+3856960190344"], ["note", "Crucifix phlogiston chillwave cardigan."], ["created_at", "2023-06-05 08:48:08.955337"], ["updated_at", "2023-06-05 08:48:08.955337"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Virgin Galactic"], ["address", "Apt. 320 6250 Claud Motorway, MacGyvermouth, LA 88837-9899"], ["nip", "00780245494"], ["company_type", 0], ["phone", "+6794282988370"], ["note", "Meggings selfies readymade portland venmo hoodie roof."], ["created_at", "2023-06-05 08:49:18.748507"], ["updated_at", "2023-06-05 08:49:18.748507"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Rocket Lab"], ["address", "464 Ledner Mission, Port Connie, LA 08612"], ["nip", "05225117819"], ["company_type", 0], ["phone", "+277675815533"], ["note", "Park swag kogi chartreuse portland listicle neutra art party."], ["created_at", "2023-06-05 08:49:18.752972"], ["updated_at", "2023-06-05 08:49:18.752972"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "nip", "company_type", "phone", "note", "created_at", "updated_at", "company_customer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "SpaceDev"], ["address", "54767 Schmeler Gateway, North Bev, AZ 21088"], ["nip", "09876598117"], ["company_type", 0], ["phone", "+67211030280209"], ["note", "Kogi tousled fingerstache bushwick trust fund knausgaard semiotics scenester."], ["created_at", "2023-06-05 08:49:18.757797"], ["updated_at", "2023-06-05 08:49:18.757797"], ["company_customer_id", nil]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Hosea"], ["lastname", "Strosin"], ["email", "rosie_olson@kulas.test"], ["country", "Niger"], ["voivodeship", nil], ["city", "South Dolores"], ["post_code", "01690-4676"], ["phone", "+6794381947436"], ["company", "Rocket Lab"], ["nip", nil], ["role", 1], ["personal_number", "03657296057"], ["passwd", "[FILTERED]"], ["note", "Bespoke post-ironic fashion axe muggle magic park umami kombucha."], ["created_at", "2023-06-05 08:50:13.905525"], ["updated_at", "2023-06-05 08:50:13.905525"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Russ"], ["lastname", "Mills"], ["email", "aide@padberg-schuppe.test"], ["country", "Dominican Republic"], ["voivodeship", nil], ["city", "Faychester"], ["post_code", "50304"], ["phone", "+3897919031885"], ["company", "Bigelow Aerospace"], ["nip", nil], ["role", 1], ["personal_number", "01149672392"], ["passwd", "[FILTERED]"], ["note", "Retro chartreuse leggings lo-fi forage."], ["created_at", "2023-06-05 08:50:13.910201"], ["updated_at", "2023-06-05 08:50:13.910201"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Angla"], ["lastname", "Douglas"], ["email", "jeniffer.mante@hettinger-brakus.test"], ["country", "Niue"], ["voivodeship", nil], ["city", "Yulandafurt"], ["post_code", "81376-9048"], ["phone", "+209532314052"], ["company", "Rocket Lab"], ["nip", nil], ["role", 1], ["personal_number", "08225616887"], ["passwd", "[FILTERED]"], ["note", "Pop-up art party vegan put a bird on it goth post-ironic gentrify hashtag."], ["created_at", "2023-06-05 08:50:13.914685"], ["updated_at", "2023-06-05 08:50:13.914685"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Quyen"], ["lastname", "Conn"], ["email", "denyse@lang.test"], ["country", "Austria"], ["voivodeship", nil], ["city", "Zonaland"], ["post_code", "42875-6790"], ["phone", "+2644843361912"], ["company", "SpaceX"], ["nip", nil], ["role", 1], ["personal_number", "04500421871"], ["passwd", "[FILTERED]"], ["note", "Flexitarian bitters biodiesel artisan food truck keytar."], ["created_at", "2023-06-05 08:50:16.612859"], ["updated_at", "2023-06-05 08:50:16.612859"]]
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Shelton"], ["lastname", "Kulas"], ["email", "clay_west@howe-gibson.example"], ["country", "Niger"], ["voivodeship", nil], ["city", "New Clyde"], ["post_code", "89039"], ["phone", "+14418073695362"], ["company", "NASA Jet Propulsion Laboratory"], ["nip", nil], ["role", 1], ["personal_number", "05316500405"], ["passwd", "[FILTERED]"], ["note", "3 wolf moon kinfolk heirloom tote bag pop-up beard kale chips yolo."], ["created_at", "2023-06-05 08:50:16.626538"], ["updated_at", "2023-06-05 08:50:16.626538"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Janeen"], ["lastname", "Botsford"], ["email", "royal@littel-gleason.example"], ["country", "Kenya"], ["voivodeship", nil], ["city", "Bradtkeshire"], ["post_code", "45398-8041"], ["phone", "+2498797706341"], ["company", "SpaceX"], ["nip", nil], ["role", 1], ["personal_number", "09938128772"], ["passwd", "[FILTERED]"], ["note", "Hashtag mlkshk crucifix single-origin coffee wes anderson gluten-free ugh."], ["created_at", "2023-06-05 08:50:16.631033"], ["updated_at", "2023-06-05 08:50:16.631033"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Shan"], ["lastname", "Wyman"], ["email", "retta.anderson@ullrich.example"], ["country", "Angola"], ["voivodeship", nil], ["city", "Port Jason"], ["post_code", "31810-0666"], ["phone", "+4201293378984"], ["company", "Virgin Galactic"], ["nip", nil], ["role", 1], ["personal_number", "00889139518"], ["passwd", "[FILTERED]"], ["note", "Carry pour-over before they sold out bicycle rights asymmetrical pabst shoreditch."], ["created_at", "2023-06-05 08:50:17.815172"], ["updated_at", "2023-06-05 08:50:17.815172"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Valencia"], ["lastname", "O'Conner"], ["email", "allie_greenholt@block.example"], ["country", "Netherlands"], ["voivodeship", nil], ["city", "Port Malisaburgh"], ["post_code", "35781-6812"], ["phone", "+362213104117"], ["company", "Bigelow Aerospace"], ["nip", nil], ["role", 1], ["personal_number", "02493448719"], ["passwd", "[FILTERED]"], ["note", "Bitters thundercats semiotics vinegar skateboard gastropub seitan godard."], ["created_at", "2023-06-05 08:50:17.819466"], ["updated_at", "2023-06-05 08:50:17.819466"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Dee"], ["lastname", "Barrows"], ["email", "mabel@hilll.example"], ["country", "Finland"], ["voivodeship", nil], ["city", "Lake Maxberg"], ["post_code", "27485-1391"], ["phone", "+6913062828267"], ["company", "NASA Jet Propulsion Laboratory"], ["nip", nil], ["role", 1], ["personal_number", "07515324438"], ["passwd", "[FILTERED]"], ["note", "Franzen cred disrupt try-hard banjo williamsburg +1 deep v jean shorts."], ["created_at", "2023-06-05 08:50:17.824975"], ["updated_at", "2023-06-05 08:50:17.824975"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/companies" for ::1 at 2023-06-05 11:07:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started POST "/api/users" for ::1 at 2023-06-05 11:07:33 +0200
+Processing by Api::UsersController#create as */*
+  Parameters: {"name"=>"Harlan Ruecker", "lastname"=>"Rambo", "email"=>"john@example.com", "country"=>"PL", "voivodeship"=>"Lodzkie", "city"=>"Lodz", "post_code"=>"20-30", "phone"=>"+48777888777", "nip"=>"44455566", "role"=>"boss", "personal_number"=>"7787845", "passwd"=>"[FILTERED]", "user"=>{"name"=>"Harlan Ruecker", "lastname"=>"Rambo", "email"=>"john@example.com", "country"=>"PL", "voivodeship"=>"Lodzkie", "city"=>"Lodz", "post_code"=>"20-30", "phone"=>"+48777888777", "nip"=>"44455566", "role"=>"boss", "personal_number"=>"7787845", "passwd"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :voivodeship. Context: { controller: Api::UsersController, action: create, request: #<ActionDispatch::Request:0x00007f2705944098>, params: {"name"=>"Harlan Ruecker", "lastname"=>"Rambo", "email"=>"john@example.com", "country"=>"PL", "voivodeship"=>"Lodzkie", "city"=>"Lodz", "post_code"=>"20-30", "phone"=>"+48777888777", "nip"=>"44455566", "role"=>"boss", "personal_number"=>"7787845", "passwd"=>"[FILTERED]", "controller"=>"api/users", "action"=>"create", "user"=>{"name"=>"Harlan Ruecker", "lastname"=>"Rambo", "email"=>"john@example.com", "country"=>"PL", "voivodeship"=>"Lodzkie", "city"=>"Lodz", "post_code"=>"20-30", "phone"=>"+48777888777", "nip"=>"44455566", "role"=>"boss", "personal_number"=>"7787845", "passwd"=>"[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "country", "voivodeship", "city", "post_code", "phone", "company", "nip", "role", "personal_number", "passwd", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["name", "Harlan Ruecker"], ["lastname", "Rambo"], ["email", "john@example.com"], ["country", "PL"], ["voivodeship", nil], ["city", "Lodz"], ["post_code", "20-30"], ["phone", "+48777888777"], ["company", nil], ["nip", "44455566"], ["role", 1], ["personal_number", "7787845"], ["passwd", "[FILTERED]"], ["note", nil], ["created_at", "2023-06-05 09:07:33.123453"], ["updated_at", "2023-06-05 09:07:33.123453"]]
+  ↳ app/controllers/api/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:13:in `create'
+Completed 201 Created in 27ms (Views: 0.5ms | ActiveRecord: 4.5ms | Allocations: 15460)
+
+
+Started POST "/api/company" for ::1 at 2023-06-05 11:07:53 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/api/company"):
+  
+Started POST "/api/companies" for ::1 at 2023-06-05 11:08:01 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for ::1 at 2023-06-05 11:08:39 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/marci/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/marci/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 524)
+Completed 200 OK in 11ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3531)
+
+
+Started GET "/" for ::1 at 2023-06-05 11:08:41 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/marci/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/marci/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 296)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 968)
+
+
+Started GET "/api/v1/hero_baners/1" for ::1 at 2023-06-05 11:08:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/hero_baners/1"):
+  
+Started GET "/favicon.ico" for ::1 at 2023-06-05 11:08:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/users" for ::1 at 2023-06-05 11:09:01 +0200
+Processing by Api::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/users_controller.rb:23:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 3186)
+
+
+Started GET "/api/users" for ::1 at 2023-06-05 11:09:16 +0200
+Processing by Api::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/users_controller.rb:23:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2825)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-06-05 11:09:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 11:10:19 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies/1" for ::1 at 2023-06-05 11:13:35 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Started GET "/api/companies/13" for ::1 at 2023-06-05 11:14:37 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api//api/companies" for ::1 at 2023-06-05 11:15:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/api/api/companies"):
+  
+Started GET "/api//api/companies" for ::1 at 2023-06-05 12:16:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/api/companies"):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:16:32 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:16:35 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:16:37 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:17:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:22:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:22:18 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:23:08 +0200
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:23:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /home/marci/RentApi/app/controllers/api/companies_controller.rb to define constant Api::CompaniesController, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^):
+  
+zeitwerk (2.6.7) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.7) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.3) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.3) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.3) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.3) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.3) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/companies" for ::1 at 2023-06-05 12:27:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::CompaniesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::CompanyController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:28:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/companies"):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:28:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/api/companies"):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:28:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/api/companies"):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:28:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/api/companies"):
+  
+Started GET "/api/companies" for ::1 at 2023-06-05 12:28:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/api/companies"):
+  
+Started GET "/api/company" for ::1 at 2023-06-05 12:28:49 +0200
+Processing by Api::CompanyController#index as HTML
+Enum element 'not_work' in Company uses the prefix 'not_'. This has caused a conflict with auto generated negative scopes. Avoid using enum elements starting with 'not' where the positive form is also an element.
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/company_controller.rb:20:in `index'
+Completed 200 OK in 32ms (Views: 15.7ms | ActiveRecord: 4.1ms | Allocations: 14304)
+
+

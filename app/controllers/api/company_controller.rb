@@ -2,10 +2,10 @@
 
 module Api
   # company Controller
-  class CompaniesController < ApplicationController
+  class CompanyController < ApplicationController
     before_action :set_company, only: %I[show update destroy]
     # POST /api/companies
-    def create
+    def createra
       @company = Company.new(company_params)
       if @company.save
         render json: @company, status: :created

@@ -7,8 +7,8 @@ module Api
 
     # GET /api/customers
     def index
-    @customers = Customer.all
-    render json: @customers
+      @customers = Customer.all
+      render json: @customers
     end
 
     # POST /api/customers
